@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Frontend_Pantallas.SplashScreen"
+    android:background="@color/white">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:gravity="center"
+      android:layout_marginTop="245dp">
+
+    <ImageView
+        android:id="@+id/logosplash1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/logopiznt"
+        />
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_marginTop="430dp"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:gravity="center">
+
+    <TextView
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="PizInt"
+        android:textSize="40sp"
+
+        />
+
+
+  </LinearLayout>
+
+
+
+  </RelativeLayout>
