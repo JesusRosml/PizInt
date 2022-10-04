@@ -17,4 +17,8 @@
     <color name="defaultIconColor">#FFFFFF</color>
     <color name="selectedIconColor">#FFFFFF</color>
 
+    <!-- Colores para la barra de navegacion -->
+    <color name="contenidoprincipal">#42A5F5</color>
+
+
 </resources>
