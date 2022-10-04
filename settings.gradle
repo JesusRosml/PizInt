@@ -10,6 +10,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        //noinspection JcenterRepositoryobsolete
+        jcenter() //ignore the warning
     }
 }
 rootProject.name = "PizInt"

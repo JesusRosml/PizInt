@@ -7,4 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Colores para la barra de navegacion -->
+    <color name="shadowColor">#4A148C</color>
+    <color name="backgroundBottomColor">#880E4F</color>
+    <color name="circleColor">#B71C1C</color>
+    <color name="countBackgroundColor">#0D47A1</color>
+    <color name="countTextColor">#1A237E</color>
+    <color name="defaultIconColor">#311B92</color>
+    <color name="selectedIconColor">#004D40</color>
+
 </resources>
