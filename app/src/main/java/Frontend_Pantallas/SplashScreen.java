@@ -6,8 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.jesus.pizint.BarraNavegacionDesplegable;
 import com.jesus.pizint.MainActivity;
 import com.jesus.pizint.R;
+import com.jesus.pizint.ui.home.HomeFragment;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -20,7 +22,7 @@ public class SplashScreen extends AppCompatActivity {
 
             @Override
             public void run() {
-                Intent i = new Intent(SplashScreen.this, MainActivity.class);
+                Intent i = new Intent(SplashScreen.this, BarraNavegacionDesplegable.class);
                 startActivity(i);
                 finish();
             }

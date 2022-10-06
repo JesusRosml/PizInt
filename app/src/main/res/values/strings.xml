@@ -20,6 +20,17 @@
     <string name="textorelleno1">texto 1</string>
     <string name="textorelleno2">texto 2</string>
     <string name="textorelleno3">texto 3</string>
+    <string name="title_activity_barra_navegacion_desplegable">BarraNavegacionDesplegable</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Seccion De Noticias</string>
+    <string name="menu_gallery">Seccion VieoNoticias</string>
+    <string name="menu_slideshow">Seccion Itesco</string>
 
 
 </resources>

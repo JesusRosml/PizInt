@@ -1,12 +1,20 @@
 package com.jesus.pizint;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
+import Frontend_Pantallas.Exclusive_Login;
+import Frontend_Pantallas.Informacion_esc;
+import Frontend_Pantallas.pantallaextra;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+import meow.bottomnavigation.MeowBottomNavigation;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,47 +30,50 @@ public class MainActivity extends AppCompatActivity {
 
         TextView selected_page = findViewById(R.id.selected_page);
         MeowBottomNavigation bottomNavigation = findViewById(R.id.bottomNavigation);
-
-
+        //ICONO DE LA BARRA
         bottomNavigation.add(new MeowBottomNavigation.Model(ID_HOME,R.drawable.ic_baseline_home_24));
         bottomNavigation.add(new MeowBottomNavigation.Model(ID_MESSAGE,R.drawable.ic_baseline_message_24));
         bottomNavigation.add(new MeowBottomNavigation.Model(ID_NOTIFICATION,R.drawable.ic_baseline_notifications_24));
         bottomNavigation.add(new MeowBottomNavigation.Model(ID_ACCOUNT,R.drawable.ic_baseline_account_circle_24));
 
-
-        bottomNavigation.setOnClickMenuListener(new MeowBottomNavigation.ClickListener() {
+        //MENSAJE DE SELECCION DE ITEM DE NAVEGACION
+        /*bottomNavigation.setOnClickMenuListener(new Function1<MeowBottomNavigation.Model, Unit>() {
             @Override
-            public void onClickItem(MeowBottomNavigation.Model item) {
-                Toast.makeText(MainActivity.this,"clicked item : " + item.getId(),Toast.LENGTH_SHORT).show();
+            public Unit invoke(MeowBottomNavigation.Model model) {
+                Toast.makeText(MainActivity.this,"clicked item : " + model.getId(),Toast.LENGTH_SHORT).show();
+                return null;
             }
-        });
-
-        bottomNavigation.setOnShowListener(new MeowBottomNavigation.ShowListener() {
-
+        });*/
+        bottomNavigation.setOnShowListener(new Function1<MeowBottomNavigation.Model, Unit>() {
             @Override
-            public void onShowItem(MeowBottomNavigation.Model item) {
-
+            public Unit invoke(MeowBottomNavigation.Model model) {
                 String name;
-                switch (item.getId()){
-                    case ID_HOME: name ="Home";
+                switch (model.getId()){
+                    case ID_HOME: name = "Home";
                     break;
 
-                    case ID_MESSAGE: name="Message";
+                    case ID_MESSAGE: name = "Videos";
+                        Intent intent = new Intent(getApplicationContext(), pantallaextra.class);
+                        startActivity(intent);
                     break;
 
-                    case ID_NOTIFICATION: name="Notification";
+                    case ID_NOTIFICATION: name = "Musica";
+                        //pass
                     break;
 
-                    case ID_ACCOUNT: name="Account";
+                    case ID_ACCOUNT: name = "Info";
+                        Intent intent2 = new Intent(getApplicationContext(), Informacion_esc.class);
+                        startActivity(intent2);
                     break;
 
-                    default: name ="";
+                    default: name = "";
                 }
-                selected_page.setText(getString(R.string.main_page_selected, name));
+                //selected_page.setText(getString(R.string.main_page_selected, name));
+                return null;
             }
         });
-
-        bottomNavigation.setCount(ID_NOTIFICATION, "4");
+        //Agregar icono notificacion (ID_del_Icono, Cantidad de notificaciones
+        //bottomNavigation.setCount(ID_NOTIFICATION, "4");
         bottomNavigation.show(ID_HOME, true);
 
     }

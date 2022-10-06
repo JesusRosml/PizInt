@@ -14,10 +14,14 @@
         android:theme="@style/Theme.PizInt"
         tools:targetApi="31">
         <activity
+            android:name=".BarraNavegacionDesplegable"
+            android:exported="false"
+            android:label="@string/title_activity_barra_navegacion_desplegable"
+            android:theme="@style/Theme.PizInt.NoActionBar" />
+        <activity
             android:name="Frontend_Pantallas.Exclusive_Login"
             android:exported="false"
-            android:theme="@style/TemaPopup"
-            />
+            android:theme="@style/TemaPopup" />
         <activity
             android:name="Frontend_Pantallas.pantallaextra"
             android:exported="false" />

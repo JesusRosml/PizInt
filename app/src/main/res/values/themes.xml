@@ -20,4 +20,13 @@
         <item name="android:windowCloseOnTouchOutside">true</item>
     </style>
 
+    <style name="Theme.PizInt.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.PizInt.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.PizInt.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>
