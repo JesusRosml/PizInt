@@ -5,11 +5,13 @@
       <map>
         <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/drawable/borde_botones.xml" value="0.1" />
         <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/drawable/bordes_contenidonoticias_home.xml" value="0.124" />
-        <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/layout/activity_creacionnoticias.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/drawable/bordes_musicahome.xml" value="0.146" />
+        <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/drawable/contenedor_img.xml" value="0.146" />
+        <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/layout/activity_creacionnoticias.xml" value="0.21335646140503037" />
         <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/layout/activity_exclusive_login.xml" value="0.11639492753623189" />
-        <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/layout/activity_informacion_esc.xml" value="0.21041666666666667" />
-        <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/layout/activity_main.xml" value="0.20301507537688443" />
-        <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/layout/activity_pantallaextra.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/layout/activity_informacion_esc.xml" value="0.1" />
+        <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/layout/activity_pantallaextra.xml" value="0.21490467937608318" />
         <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
       </map>
     </option>

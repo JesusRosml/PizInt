@@ -10,21 +10,20 @@
     <LinearLayout
         android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="70dp"
         android:orientation="vertical">
 
         <soup.neumorphism.NeumorphCardView
             style="@style/Widget.Neumorph.CardView"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_margin="20dp">
+            android:layout_height="70dp">
 
             <TextView
                 android:layout_margin="7dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:text="Noticias Nuevas"
+                android:text="Sección Noticia "
                 android:background="@android:color/transparent"
                 android:gravity="center"
                 android:textColor="@color/black"
@@ -38,7 +37,7 @@
     <HorizontalScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp">
+        android:layout_marginTop="75dp">
 
         <GridLayout
             android:layout_width="wrap_content"
@@ -66,8 +65,8 @@
 
                     <LinearLayout
                         android:id="@+id/layou1"
-                        android:layout_width="350dp"
-                        android:layout_height="250dp"
+                        android:layout_width="385dp"
+                        android:layout_height="330dp"
                         android:background="@drawable/bordes_contenidonoticias_home"
                         android:layout_margin="3dp">
 
@@ -94,8 +93,8 @@
 
                     <LinearLayout
                         android:id="@+id/layou2"
-                        android:layout_width="350dp"
-                        android:layout_height="250dp"
+                        android:layout_width="385dp"
+                        android:layout_height="330dp"
                         android:background="@drawable/bordes_contenidonoticias_home"
                         android:layout_margin="3dp">
 
@@ -120,8 +119,8 @@
 
                     <LinearLayout
                         android:id="@+id/layou3"
-                        android:layout_width="350dp"
-                        android:layout_height="250dp"
+                        android:layout_width="385dp"
+                        android:layout_height="330dp"
                         android:background="@drawable/bordes_contenidonoticias_home"
                         android:layout_margin="3dp">
 
@@ -146,8 +145,8 @@
 
                     <LinearLayout
                         android:id="@+id/layout4"
-                        android:layout_width="350dp"
-                        android:layout_height="250dp"
+                        android:layout_width="385dp"
+                        android:layout_height="330dp"
                         android:background="@drawable/bordes_contenidonoticias_home"
                         android:layout_margin="3dp">
 
@@ -172,8 +171,8 @@
 
                     <LinearLayout
                         android:id="@+id/layou5"
-                        android:layout_width="350dp"
-                        android:layout_height="250dp"
+                        android:layout_width="385dp"
+                        android:layout_height="330dp"
                         android:background="@drawable/bordes_contenidonoticias_home"
                         android:layout_margin="3dp">
 
@@ -203,38 +202,11 @@
         </GridLayout>
     </HorizontalScrollView>
 
-    <LinearLayout
-        android:layout_marginTop="330dp"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:orientation="vertical">
-
-    <soup.neumorphism.NeumorphCardView
-        style="@style/Widget.Neumorph.CardView"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:layout_margin="20dp">
-
-        <TextView
-            android:layout_margin="7dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:text="Video Noticias"
-            android:background="@android:color/transparent"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="20sp"/>
-    </soup.neumorphism.NeumorphCardView>
-</LinearLayout>
-
 
     <HorizontalScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="393dp">
+        android:layout_marginTop="420dp">
 
         <GridLayout
             android:layout_width="wrap_content"
@@ -261,9 +233,9 @@
 
                     <LinearLayout
                         android:id="@+id/musica1"
-                        android:layout_width="350dp"
-                        android:layout_height="250dp"
-                        android:background="@drawable/bordes_musicahome"
+                        android:layout_width="385dp"
+                        android:layout_height="330dp"
+                        android:background="@drawable/bordes_contenidonoticias_home"
                         android:layout_margin="3dp">
 
                         <LinearLayout
@@ -288,9 +260,9 @@
 
                     <LinearLayout
                         android:id="@+id/musica2"
-                        android:layout_width="350dp"
-                        android:layout_height="250dp"
-                        android:background="@drawable/bordes_musicahome"
+                        android:layout_width="385dp"
+                        android:layout_height="330dp"
+                        android:background="@drawable/bordes_contenidonoticias_home"
                         android:layout_margin="3dp">
 
                         <LinearLayout
@@ -315,9 +287,9 @@
 
                     <LinearLayout
                         android:id="@+id/musica3"
-                        android:layout_width="350dp"
-                        android:layout_height="250dp"
-                        android:background="@drawable/bordes_musicahome"
+                        android:layout_width="385dp"
+                        android:layout_height="330dp"
+                        android:background="@drawable/bordes_contenidonoticias_home"
                         android:layout_margin="3dp">
 
                         <LinearLayout
@@ -342,9 +314,9 @@
 
                     <LinearLayout
                         android:id="@+id/musica4"
-                        android:layout_width="350dp"
-                        android:layout_height="250dp"
-                        android:background="@drawable/bordes_musicahome"
+                        android:layout_width="385dp"
+                        android:layout_height="330dp"
+                        android:background="@drawable/bordes_contenidonoticias_home"
                         android:layout_margin="3dp">
 
                         <LinearLayout
@@ -369,9 +341,9 @@
 
                     <LinearLayout
                         android:id="@+id/musica5"
-                        android:layout_width="350dp"
-                        android:layout_height="250dp"
-                        android:background="@drawable/bordes_musicahome"
+                        android:layout_width="385dp"
+                        android:layout_height="330dp"
+                        android:background="@drawable/bordes_contenidonoticias_home"
                         android:layout_margin="3dp">
 
                         <LinearLayout
@@ -398,12 +370,6 @@
             </androidx.cardview.widget.CardView>
         </GridLayout>
     </HorizontalScrollView>
-
-
-
-
-
-
 
 
 
