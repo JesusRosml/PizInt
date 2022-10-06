@@ -60,4 +60,17 @@
             app:srcCompat="@drawable/perfilnew1"/>
     </LinearLayout>
 
+    <meow.bottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:mbn_shadowColor="@color/shadowColor"
+        app:mbn_backgroundBottomColor="@color/backgroundBottomColor"
+        app:mbn_circleColor="@color/circleColor"
+        app:mbn_countBackgroundColor="@color/countBackgroundColor"
+        app:mbn_countTextColor="@color/countTextColor"
+        app:mbn_defaultIconColor="@color/defaultIconColor"
+        app:mbn_selectedIconColor="@color/selectedIconColor"/>
+
 </FrameLayout>
