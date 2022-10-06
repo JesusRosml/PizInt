@@ -4,15 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/drawable/borde_botones.xml" value="0.1" />
-        <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/drawable/borderbottom.xml" value="0.1" />
-        <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/drawable/bordertop.xml" value="0.1" />
-        <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/drawable/bordes_contenidonoticias_home.xml" value="0.161" />
-        <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/drawable/bordes_musicahome.xml" value="0.1135" />
-        <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/drawable/contenedornoticia_home.xml" value="0.161" />
+        <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/drawable/bordes_contenidonoticias_home.xml" value="0.124" />
         <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/layout/activity_creacionnoticias.xml" value="0.22447916666666667" />
-        <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/layout/activity_exclusive_login.xml" value="0.33" />
-        <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/layout/activity_informacion_esc.xml" value="0.25" />
-        <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/layout/activity_main.xml" value="0.18640576725025745" />
+        <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/layout/activity_exclusive_login.xml" value="0.11639492753623189" />
+        <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/layout/activity_informacion_esc.xml" value="0.21041666666666667" />
+        <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/layout/activity_main.xml" value="0.20301507537688443" />
         <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/layout/activity_pantallaextra.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
       </map>
@@ -23,12 +19,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.33" />
-      </ProjectState>
-    </option>
   </component>
 </project>

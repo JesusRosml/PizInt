@@ -19,6 +19,8 @@
 
     <!-- Colores para la barra de navegacion -->
     <color name="contenidoprincipal">#42A5F5</color>
+    <color name="Neumorphism">#efeeee</color>
+
 
 
 </resources>

@@ -12,6 +12,7 @@ dependencyResolutionManagement {
         mavenCentral()
         //noinspection JcenterRepositoryobsolete
         jcenter() //ignore the warning
+        maven { url "https://jitpack.io" }
     }
 }
 rootProject.name = "PizInt"
