@@ -25,11 +25,13 @@
     <!-- Colores para los contenedores noticia -->
     <color name="TituloNiticia1">#b8c0c9</color>
     <color name="DescripcionNoticia">#e7e9ed</color>
+    <color name="BarraNav">#0D47A1</color>
 
-    <!-- Colores para los contenedores noticia -->
-    <color name="Titulovideo">#374dae</color>
-    <color name="VideoNotice">#607bd7</color>
-    <color name="ControlesColors">#374dae</color>
+    <!-- Colores para los contenedores de video -->
+    <color name="Titulovideo">#0D47A1</color>
+    <color name="VideoNotice">#1565C0</color>
+    <color name="ControlesColors">#01579B</color>
+    <color name="background">#0277BD</color>
 
 
 

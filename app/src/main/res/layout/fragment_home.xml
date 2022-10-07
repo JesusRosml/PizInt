@@ -5,38 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
-
-    <!-- Codigo del titulo -->
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:background="@drawable/bordes_botonestitulohome">
-
-            <TextView
-                android:id="@+id/text_home"
-                android:layout_width="match_parent"
-                android:layout_margin="10dp"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:textAlignment="center"
-                android:text="Noticias"
-                android:textSize="20sp"
-                android:textStyle="bold"/>
-        </RelativeLayout>
-    </RelativeLayout>
-
     <!-- Seccion Noticias 1 -->
     
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp">
+        android:layout_marginTop="5dp">
         
         <GridLayout
             android:layout_width="match_parent"
@@ -417,6 +391,21 @@
 
         </GridLayout>
     </ScrollView>
+
+
+    <!-- Id java -->
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1000dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
 
 
