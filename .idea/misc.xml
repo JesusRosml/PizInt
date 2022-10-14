@@ -29,10 +29,20 @@
         <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/layout/nav_header_barra_navegacion_desplegable.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/menu/activity_main_drawer.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/menu/barra_navegacion_desplegable.xml" value="0.22447916666666667" />
+        <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/drawable/ic_informacionitesco.xml" value="0.178" />
+        <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/layout/activity_barra_navegacion_desplegable.xml" value="0.27447916666666666" />
+        <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/layout/activity_exclusive_login.xml" value="0.264" />
+        <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/layout/activity_main.xml" value="0.1334853090172239" />
+        <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/layout/activity_pantallaextra.xml" value="0.1334853090172239" />
+        <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/layout/fragment_home.xml" value="0.27447916666666666" />
+        <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/layout/fragment_slideshow.xml" value="0.27447916666666666" />
+        <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/layout/nav_header_barra_navegacion_desplegable.xml" value="0.27447916666666666" />
+        <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/menu/activity_main_drawer.xml" value="0.27447916666666666" />
+        <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/menu/barra_navegacion_desplegable.xml" value="0.27447916666666666" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
