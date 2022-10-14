@@ -34,6 +34,9 @@
     <color name="background">#0277BD</color>
     <color name="InfScue">#78909C</color>
 
+    <!-- Colores para los contenedores de musica -->
+    <color name="fondomusic">#EEEEEE</color>
+
 
 
 </resources>
