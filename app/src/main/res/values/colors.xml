@@ -36,6 +36,8 @@
 
     <!-- Colores para los contenedores de musica -->
     <color name="fondomusic">#EEEEEE</color>
+    <color name="background1">#E0E0E0</color>
+
 
 
 

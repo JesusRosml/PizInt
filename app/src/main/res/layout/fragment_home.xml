@@ -41,8 +41,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:background="@drawable/bordes_contenidonoticias_home">
+                        android:gravity="center">
 
                         <LinearLayout
                             android:orientation="vertical"
