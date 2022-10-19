@@ -28,9 +28,6 @@
             android:name="Frontend_Pantallas.Informacion_esc"
             android:exported="false" />
         <activity
-            android:name="Frontend_Pantallas.creacionnoticias"
-            android:exported="false" />
-        <activity
             android:name="Frontend_Pantallas.SplashScreen"
             android:exported="true">
             <intent-filter>
