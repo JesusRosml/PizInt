@@ -20,7 +20,8 @@
             android:theme="@style/Theme.PizInt.NoActionBar" />
         <activity
             android:name="Frontend_Pantallas.Exclusive_Login"
-            android:exported="false" />
+            android:exported="false"
+            android:noHistory="true"/>
         <activity
             android:name="Frontend_Pantallas.pantallaextra"
             android:exported="false" />
