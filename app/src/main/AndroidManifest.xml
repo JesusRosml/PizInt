@@ -22,12 +22,6 @@
             android:name="Frontend_Pantallas.Exclusive_Login"
             android:exported="false" />
         <activity
-            android:name="Frontend_Pantallas.pantallaextra"
-            android:exported="false" />
-        <activity
-            android:name="Frontend_Pantallas.Informacion_esc"
-            android:exported="false" />
-        <activity
             android:name="Frontend_Pantallas.SplashScreen"
             android:exported="true">
             <intent-filter>
@@ -36,10 +30,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:foregroundServiceType="location" />
     </application>
 
 </manifest>
