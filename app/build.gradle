@@ -51,6 +51,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.0"
     implementation 'androidx.lifecycle:lifecycle-common-java8:2.4.0'
     implementation 'com.github.fornewid:neumorphism:0.2.1'
+    implementation 'org.mongodb:mongodb-driver-sync:4.7.2'
 
 
 }

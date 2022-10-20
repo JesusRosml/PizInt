@@ -13,7 +13,7 @@
             android:icon="@drawable/ic_videonotice"
             android:title="@string/menu_gallery" />
         <item
-            android:id="@+id/fragment_music"
+            android:id="@+id/musicFragment"
             android:icon="@drawable/ic_iconcuenta"
             android:title="@string/menu_music" />
         <item

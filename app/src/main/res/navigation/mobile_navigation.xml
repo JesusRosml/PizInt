@@ -22,4 +22,9 @@
         android:name="com.jesus.pizint.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/musicFragment"
+        android:name="com.jesus.pizint.ui.music.MusicFragment"
+        android:label="@string/menu_music"
+        tools:layout="@layout/fragment_music" />
 </navigation>
