@@ -10,11 +10,7 @@ import org.bson.BsonDocument;
 import org.bson.BsonInt64;
 import org.bson.Document;
 import org.bson.conversions.Bson;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 public class conexionBD {
-    Logger logger = LoggerFactory.getLogger("MyApp");
     public static void main(String[] args) {
         String uri = "mongodb+srv://admin:1234@cluster0.kvitngq.mongodb.net/test?retryWrites=true&w=majority";
 

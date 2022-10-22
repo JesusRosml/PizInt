@@ -10,7 +10,6 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 import com.jesus.pizint.BarraNavegacionDesplegable;
-import com.jesus.pizint.MainActivity;
 import com.jesus.pizint.R;
 import com.jesus.pizint.ui.slideshow.SlideshowFragment;
 
