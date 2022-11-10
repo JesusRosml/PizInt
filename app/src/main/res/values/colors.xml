@@ -37,6 +37,10 @@
     <!-- Colores para los contenedores de musica -->
     <color name="fondomusic">#EEEEEE</color>
     <color name="background1">#E0E0E0</color>
+    <color name="gris900">#757575</color>
+    <color name="gris500">#9E9E9E</color>
+    <color name="gris400">#BDBDBD</color>
+
 
 
 
