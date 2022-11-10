@@ -44,7 +44,8 @@ public class SlideshowFragment extends Fragment {
         PagInicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent siguiente_pag = new Intent(getActivity(), Exclusive_Login.class);
+                Intent siguiente_pag = new Intent(getActivity(), Exclusive_Login
+                        .class);
                 startActivity(siguiente_pag);
             }
         });
