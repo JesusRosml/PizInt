@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.home.HomeFragment">
 
     <!-- Boton flotante -->
@@ -21,255 +23,9 @@
         android:textSize="30sp"
         android:textStyle="bold" />
 
-    <!-- Seccion Noticias 1 -->
-    
-    <ScrollView
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp">
-        
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:alignmentMode="alignMargins"
-            android:columnCount="1"
-            android:columnOrderPreserved="false"
-            android:rowCount="2">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="5dp"
-                app:cardCornerRadius="5dp"
-                android:layout_marginTop="0dp"
-                app:cardElevation="5dp">
-                
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="0dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center">
-
-                        <LinearLayout
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/contenedornoticia_home"
-                            android:gravity="center">
-
-                            <LinearLayout
-                                android:id="@+id/linttle1"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:background="@color/TituloNiticia1">
-
-                                <TextView
-                                    android:id="@+id/texto1"
-                                    android:layout_marginTop="1dp"
-                                    android:textColor="@color/black"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Semana Académica"
-                                    android:textAlignment="center"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:id="@+id/lineimg1"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@color/DescripcionNoticia">
-
-                                <ImageView
-                                    android:id="@+id/lineimguno"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="240dp"
-                                    android:src="@drawable/imgitescoapp"/>
-
-                            </LinearLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-    <!-- Seccion Noticias 2 -->
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="5dp"
-                app:cardCornerRadius="5dp"
-                android:layout_marginTop="0dp"
-                app:cardElevation="5dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="0dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:background="@drawable/bordes_contenidonoticias_home">
-
-                        <LinearLayout
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/contenedornoticia_home"
-                            android:gravity="center">
-
-                            <LinearLayout
-                                android:id="@+id/linertitle2"
-                                android:layout_width="match_parent"
-                                android:gravity="center"
-                                android:layout_height="wrap_content"
-                                android:background="@color/TituloNiticia1">
-
-                                <TextView
-                                    android:id="@+id/texto2"
-                                    android:layout_marginTop="1dp"
-                                    android:textColor="@color/black"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Semana Académica"
-                                    android:textAlignment="center"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:id="@+id/linerimg2"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:background="@color/DescripcionNoticia">
-
-                                <ImageView
-                                    android:id="@+id/linerimgdos"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="470dp"
-                                    android:src="@drawable/pinataimg"/>
-
-                            </LinearLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- Seccion noticia 3 -->
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="5dp"
-                app:cardCornerRadius="5dp"
-                android:layout_marginTop="0dp"
-                app:cardElevation="5dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="0dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:background="@drawable/bordes_contenidonoticias_home">
-
-                        <LinearLayout
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/contenedornoticia_home"
-                            android:gravity="center">
-                            <!-- -->
-                            <LinearLayout
-                                android:orientation="vertical"
-                                android:gravity="center"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <LinearLayout
-                                    android:id="@+id/linerTitle1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:background="@color/TituloNiticia1">
-
-                                    <TextView
-                                        android:id="@+id/linerTitleone"
-                                        android:layout_margin="2dp"
-                                        android:textAlignment="center"
-                                        android:textColor="@color/black"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text=""
-                                        android:textSize="15sp"
-                                        android:textStyle="bold"/>
-
-                                </LinearLayout>
-                                <LinearLayout
-                                    android:id="@+id/descripNotic1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:background="#E0E0E0">
-
-                                    <TextView
-                                        android:id="@+id/descripNoticeUno"
-                                        android:layout_margin="2dp"
-                                        android:textAlignment="center"
-                                        android:textColor="@color/black"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text=""
-                                        android:textSize="15sp"
-                                        android:textStyle="bold"/>
-
-                                </LinearLayout>
-                                <LinearLayout
-                                    android:id="@+id/linerimg1"
-                                    android:visibility="invisible"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:background="#E0E0E0">
-
-                                    <ImageView
-                                        android:id="@+id/img1"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:src="@drawable/img_vector2"/>
-                                </LinearLayout>
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-        </GridLayout>
-    </ScrollView>
-
-
+        android:layout_height="match_parent" />
 
 
     <!-- Id java -->
@@ -285,4 +41,5 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold" />
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>
