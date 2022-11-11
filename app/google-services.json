@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "712475624671",
+    "firebase_url": "https://pizint-default-rtdb.firebaseio.com",
+    "project_id": "pizint",
+    "storage_bucket": "pizint.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712475624671:android:19cf8fe76c4fc13655156a",
+        "android_client_info": {
+          "package_name": "com.jesus.pizint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712475624671-odh5caraf3s8vmfhi4a9c1j3qv0ddro6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTc_ZsuZwWNJP6NQ8Ga1Zt74OiON7oH_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712475624671-odh5caraf3s8vmfhi4a9c1j3qv0ddro6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
