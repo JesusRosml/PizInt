@@ -21,7 +21,7 @@ import com.jesus.pizint.R;
 public class Public_NoticeOff extends AppCompatActivity {
 
     ImageView imageView;
-    ImageButton btn;
+    Button btn;
 
     private static final int SELECT_IMAGE = 100;
 

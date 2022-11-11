@@ -57,7 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:background="@color/BarraNav">
+            android:background="@color/white">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -118,17 +118,21 @@
                     android:layout_height="wrap_content"
                     android:padding="10dp"
                     android:text="Seleccionar Imagen:"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textStyle="bold"
                     android:textSize="20dp"/>
 
-                <ImageButton
+                <Button
                     android:id="@+id/pickImage"
-                    android:layout_width="120dp"
-                    android:layout_marginLeft="7dp"
-                    android:background="@color/buttonB"
+                    android:layout_width="100dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/ic_regresar" />
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border_public"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="Publicar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
 
             </LinearLayout>
 
@@ -143,7 +147,7 @@
                 android:layout_marginRight="15sp"
                 android:padding="10sp">
 
-                
+
                 <RelativeLayout
                     android:id="@+id/captureLayout"
                     android:layout_width="wrap_content"
