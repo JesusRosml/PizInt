@@ -27,5 +27,8 @@
 
     <style name="Theme">Temapopu</style>
 
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge"/>
+
+
 
 </resources>

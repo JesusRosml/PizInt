@@ -8,16 +8,16 @@
 
     <!-- Boton flotante -->
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_home1"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/publicnotice1"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:clickable="true"
-        android:focusable="true"
+
         android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
-        android:backgroundTint="@color/white"
-        android:src="@drawable/iconmas"/>
+        android:layout_margin="10dp"
+        android:background="@drawable/button_publicnotice"
+        android:text=""
+        android:textAllCaps="false" />
 
     <!-- Seccion Noticias 1 -->
     
