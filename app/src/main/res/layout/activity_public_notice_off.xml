@@ -17,14 +17,14 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal"
-            android:background="@color/BarraNav">
+            android:background="@drawable/border_encabezado">
 
             <ImageButton
                 android:id="@+id/boton_regresar"
                 android:layout_width="80dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="7dp"
-                android:background="@color/buttonB"
+                android:background="#1565C0"
                 android:layout_height="40dp"
                 android:src="@drawable/ic_regresar" />
 
@@ -57,7 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:background="@color/white">
+            android:background="#FFFFFF">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -109,32 +109,20 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="50dp"
                 android:background="@drawable/border_img"
                 android:layout_marginTop="10dp"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_marginStart="7dp"
-                android:layout_marginEnd="7dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:text="Seleccionar Imagen:"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="20dp"/>
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:gravity="center">
 
                 <Button
                     android:id="@+id/pickImage"
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:background="@drawable/border_public"
                     android:textSize="20dp"
-                    android:layout_marginLeft="15dp"
-                    android:text="Publicar"
+                    android:text="Seleccionar Imagenes"
                     android:textAllCaps="false"
                     android:textColor="@color/white" />
 
@@ -143,14 +131,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_centerInParent="true"
-                android:gravity="center_horizontal"
-                android:layout_marginTop="10sp"
-                android:layout_marginLeft="15sp"
-                android:layout_marginRight="15sp"
-                android:padding="10sp">
-
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp">
 
                 <RelativeLayout
                     android:id="@+id/captureLayout"
@@ -161,13 +144,16 @@
                         android:id="@+id/image"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/img_gallery"/>
-
-
-
+                        android:src="@drawable/img_vector2"/>
 
                 </RelativeLayout>
             </LinearLayout>
+
         </LinearLayout>
+
+
+
     </LinearLayout>
+
+
 </RelativeLayout>
