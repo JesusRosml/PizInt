@@ -22,7 +22,7 @@
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold" />
-
+    <!-- recyclerView dwd funcionando -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewBD"
         android:layout_width="match_parent"
