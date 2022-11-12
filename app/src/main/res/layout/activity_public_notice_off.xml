@@ -20,7 +20,7 @@
             android:background="@drawable/border_encabezado">
 
             <ImageButton
-                android:id="@+id/boton_regresar"
+                android:id="@+id/boton_regresar2"
                 android:layout_width="80dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="7dp"
