@@ -1,18 +1,24 @@
 package com.jesus.pizint.ui.gallery;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.jesus.pizint.R;
 import com.jesus.pizint.databinding.FragmentGalleryBinding;
 
+import Frontend_Pantallas.Public_NoticeOff;
+
 public class GalleryFragment extends Fragment {
+    Button pag;
 
     private FragmentGalleryBinding binding;
 
@@ -26,6 +32,16 @@ public class GalleryFragment extends Fragment {
 
         final TextView textView = binding.textGallery;
         galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
+        pag = (Button) root.findViewById(R.id.publicnotice1);
+        pag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent siguiente_pag = new Intent(getActivity(), Public_NoticeOff
+                        .class);
+                startActivity(siguiente_pag);
+            }
+        });
         return root;
     }
 
