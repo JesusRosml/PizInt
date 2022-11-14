@@ -23,6 +23,7 @@ import com.jesus.pizint.R;
 import com.jesus.pizint.databinding.FragmentHomeBinding;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 import Frontend_Pantallas.Public_NoticeOff;
 import Frontend_Pantallas.publicacionAdapter;
@@ -75,6 +76,7 @@ public class HomeFragment extends Fragment {
                         String contenido = ds.child("contenido").getValue().toString();
                         pPublicacionesList.add(new subirBD(null,titulo,contenido,null));
                     }
+                    Collections.reverse(pPublicacionesList);
                     pAdapter = new publicacionAdapter(pPublicacionesList,R.layout.recycler_bd_view);
                     pRecyclerView.setAdapter(pAdapter);
                 }
