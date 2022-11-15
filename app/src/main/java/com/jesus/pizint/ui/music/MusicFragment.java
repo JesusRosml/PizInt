@@ -32,7 +32,7 @@ public class MusicFragment extends Fragment{
 
         final TextView textView = binding.textMusic;
         musicViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
-        pag = (Button) root.findViewById(R.id.publicnotice1);
+        pag = (Button) root.findViewById(R.id.publicnotice2);
         pag.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

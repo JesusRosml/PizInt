@@ -33,7 +33,7 @@ public class GalleryFragment extends Fragment {
         final TextView textView = binding.textGallery;
         galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
 
-        pag = (Button) root.findViewById(R.id.publicnotice1);
+        pag = (Button) root.findViewById(R.id.publicnotice3);
         pag.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
