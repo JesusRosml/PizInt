@@ -12,7 +12,8 @@
     <!-- Boton flotante -->
 
     <LinearLayout
-        android:visibility="invisible"
+        android:id="@+id/btn_publicar"
+        android:visibility="visible"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="5dp"

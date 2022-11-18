@@ -63,6 +63,14 @@ public class Public_NoticeOff extends AppCompatActivity {
                 );
             }
         });
+        regresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent back = new Intent(getBaseContext(), BarraNavegacionDesplegable.class);
+                startActivity(back);
+            }
+        });
+
     }
 
     @Override
