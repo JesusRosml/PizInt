@@ -17,7 +17,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:background="@color/BarraNav"
+            android:background="@color/NewColors"
             app:popupTheme="@style/Theme.PizInt.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>

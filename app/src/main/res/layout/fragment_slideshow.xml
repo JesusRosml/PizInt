@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="240dp"
         android:gravity="center"
-        android:background="@color/BarraNav">
+        android:background="@color/NewColors">
 
 
         <LinearLayout
@@ -83,6 +83,7 @@
     <!-- Codigo Informacion School -->
 
     <LinearLayout
+        android:visibility="invisible"
         android:orientation="vertical"
         android:layout_marginTop="575dp"
         android:layout_width="match_parent"
@@ -188,6 +189,7 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
+        android:visibility="invisible"
         android:layout_height="wrap_content"
         android:id="@+id/fab1"
         android:clickable="true"

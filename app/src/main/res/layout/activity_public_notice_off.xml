@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
+    android:background="@color/white"
     tools:context="Frontend_Pantallas.Public_NoticeOff">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,7 +26,7 @@
                 android:layout_width="80dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="7dp"
-                android:background="#1565C0"
+                android:background="#AD1457"
                 android:layout_height="40dp"
                 android:src="@drawable/ic_regresar" />
 
@@ -45,115 +47,99 @@
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="5dp"
-                android:background="@drawable/border_public"
-                android:textSize="20dp"
-                android:layout_marginLeft="15dp"
+                android:background="#AD1457"
+                android:textSize="15dp"
+                android:layout_marginLeft="12dp"
                 android:text="Publicar"
                 android:textAllCaps="false"
                 android:textColor="@color/white" />
         </LinearLayout>
 
+        <!-- Segundo -->
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:background="@drawable/border_contpublic1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txttitulo"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/border_tittlepublic1"
+                android:ems="10"
+                android:hint="Titulo de la publicación..."
+                android:inputType="textMultiLine"
+                android:padding="15dp"
+                android:lines="2"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:scrollHorizontally="false"
+                android:gravity="top" />
+
+            <EditText
+                android:id="@+id/txtcontenido"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@drawable/border_tittlepublic1"
+                android:ems="10"
+                android:hint="Descripción de la publicación..."
+                android:inputType="textMultiLine"
+                android:padding="15dp"
+                android:lines="2"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:scrollHorizontally="false"
+                android:gravity="top"/>
+        </LinearLayout>
+
+        <!-- Tercero -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/border_img"
             android:orientation="vertical"
-            android:background="#FFFFFF">
+            android:gravity="center">
 
-            <com.google.android.material.textfield.TextInputLayout
+            <Button
+                android:id="@+id/pickImage"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/contenido11"
-                android:layout_marginTop="6dp"
-                android:background="@drawable/border_public1"
-                android:layout_marginStart="7dp"
-                android:layout_marginEnd="7dp">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/txttitulo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="top"
-                    android:inputType="textMultiLine"
-                    android:lines="2"
-                    android:overScrollMode="always"
-                    android:scrollbarStyle="insideInset"
-                    android:scrollbars="vertical"
-                    android:scrollHorizontally="false">
-
-                </com.google.android.material.textfield.TextInputEditText>
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/contenido10"
-                android:layout_marginTop="6dp"
-                android:background="@drawable/border_public1"
-                android:layout_marginStart="7dp"
-                android:layout_marginEnd="7dp">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/txtcontenido"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="top"
-                    android:inputType="textMultiLine"
-                    android:lines="6"
-                    android:overScrollMode="always"
-                    android:scrollbarStyle="insideInset"
-                    android:scrollbars="vertical"
-                    android:scrollHorizontally="false">
-
-                </com.google.android.material.textfield.TextInputEditText>
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@drawable/border_img"
-                android:layout_marginTop="10dp"
-                android:layout_margin="5dp"
-                android:orientation="vertical"
-                android:gravity="center">
-
-                <Button
-                    android:id="@+id/pickImage"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/border_public"
-                    android:textSize="20dp"
-                    android:text="Seleccionar Imagenes"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_margin="10dp"
-                android:layout_marginTop="20dp">
-
-                <RelativeLayout
-                    android:id="@+id/captureLayout"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:id="@+id/image"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/img_vector2"/>
-
-                </RelativeLayout>
-            </LinearLayout>
+                android:layout_height="match_parent"
+                android:background="@drawable/border_public"
+                android:textSize="20dp"
+                android:text="Seleccionar Imagenes"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
 
         </LinearLayout>
 
+        <!-- Cuarto -->
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
 
+            <RelativeLayout
+                android:id="@+id/captureLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/logo_itesco1"/>
+
+            </RelativeLayout>
+        </LinearLayout>
     </LinearLayout>
-
-
 </RelativeLayout>

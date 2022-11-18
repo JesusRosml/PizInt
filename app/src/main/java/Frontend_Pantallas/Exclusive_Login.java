@@ -57,8 +57,5 @@ public class Exclusive_Login extends AppCompatActivity {
             }
         });
     }
-    public void showbutton(){
-        LinearLayout btn_publicar = (LinearLayout) findViewById(R.id.btn_publicar);
-        btn_publicar.setVisibility(View.VISIBLE);
-    }
+
 }
