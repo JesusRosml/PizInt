@@ -6,40 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="Frontend_Pantallas.SplashScreen"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:gravity="center">
 
   <LinearLayout
       android:layout_width="match_parent"
-      android:layout_height="200dp"
-      android:gravity="center"
-      android:layout_marginTop="245dp">
+      android:layout_height="200dp">
 
-    <ImageView
-        android:id="@+id/logosplash1"
+    <pl.droidsonroids.gif.GifImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:srcCompat="@drawable/logopiznt"
-        />
+        android:layout_height="wrap_content"
+        android:src="@drawable/gif_anim"/>
   </LinearLayout>
 
-  <LinearLayout
-      android:layout_marginTop="430dp"
-      android:layout_width="match_parent"
-      android:layout_height="50dp"
-      android:gravity="center">
-
-    <TextView
-        android:textColor="@color/black"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="PizInt"
-        android:textSize="40sp"
-
-        />
-
-
-  </LinearLayout>
 
 
 

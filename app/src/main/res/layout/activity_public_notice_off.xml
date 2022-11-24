@@ -63,40 +63,300 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <EditText
-                android:id="@+id/txttitulo"
-                android:layout_margin="5dp"
+            <!-- Buttons 1 -->
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="@drawable/border_tittlepublic1"
-                android:ems="10"
-                android:hint="Titulo de la publicación..."
-                android:inputType="textMultiLine"
-                android:padding="15dp"
-                android:lines="2"
-                android:overScrollMode="always"
-                android:scrollbarStyle="insideInset"
-                android:scrollbars="vertical"
-                android:scrollHorizontally="false"
-                android:gravity="top" />
-
-            <EditText
-                android:id="@+id/txtcontenido"
+                android:layout_height="wrap_content"
                 android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/border_tittlepublic1">
+
+                <EditText
+                    android:id="@+id/txttitulo"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/border_tittlepublic1"
+                    android:ems="10"
+                    android:textColor="@color/white"
+                    android:hint="Titulo de la publicación..."
+                    android:inputType="textMultiLine"
+                    android:padding="5dp"
+                    android:lines="2"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:scrollHorizontally="false"
+                    android:gravity="top" />
+
+                <!-- Seccion View -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/texto2"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Editar color del titulo..."
+                        android:layout_marginTop="5dp"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <!-- Botones Colors -->
+                <LinearLayout
+                    android:gravity="center"
+                    android:background="@drawable/border_tittlepublic1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonBlack"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/button_white"
+                        android:onClick="buttonSetColor"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/buttonBlue"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/button_blue"
+                        android:textSize="20dp"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/buttonPurple"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/button_purple"
+                        android:textSize="20dp"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/buttonTeal"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/button_teal"
+                        android:textSize="20dp"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/buttonOrange"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/button_orange"
+                        android:textSize="20dp"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/buttonBrown"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/button_brown"
+                        android:textSize="20dp"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/buttonPink"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/button_pink"
+                        android:textSize="20dp"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/buttonYellow"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/button_yellow"
+                        android:textSize="20dp"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- Cont text -->
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:background="@drawable/border_tittlepublic1"
-                android:ems="10"
-                android:hint="Descripción de la publicación..."
-                android:inputType="textMultiLine"
-                android:padding="15dp"
-                android:lines="2"
-                android:overScrollMode="always"
-                android:scrollbarStyle="insideInset"
-                android:scrollbars="vertical"
-                android:scrollHorizontally="false"
-                android:gravity="top"/>
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:background="@drawable/border_tittlepublic1">
+
+                <EditText
+                    android:id="@+id/txtcontenido"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:background="@drawable/border_tittlepublic1"
+                    android:ems="10"
+                    android:hint="Descripción de la publicación..."
+                    android:inputType="textMultiLine"
+                    android:padding="5dp"
+                    android:lines="2"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:scrollHorizontally="false"
+                    android:gravity="top"/>
+
+                <!-- Seccion View -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/texto3"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Editar color de la descripción..."
+                        android:layout_marginTop="5dp"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:background="@drawable/border_tittlepublic1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonBlack1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/button_white"
+                        android:textSize="20dp"
+                        android:text=""
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/buttonBlue1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/button_blue"
+                        android:textSize="20dp"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/buttonPurple1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/button_purple"
+                        android:textSize="20dp"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/buttonTeal1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/button_teal"
+                        android:textSize="20dp"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/buttonOrange1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/button_orange"
+                        android:textSize="20dp"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/buttonBrown1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/button_brown"
+                        android:textSize="20dp"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/buttonPink1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/button_pink"
+                        android:textSize="20dp"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/buttonYellow1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/button_yellow"
+                        android:textSize="20dp"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
         </LinearLayout>
 
         <!-- Tercero -->

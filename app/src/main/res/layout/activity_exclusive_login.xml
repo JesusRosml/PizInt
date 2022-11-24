@@ -22,6 +22,7 @@
             android:id="@+id/boton_regresar"
             android:layout_width="80dp"
             android:layout_height="40dp"
+            android:background="@color/NewColors2"
             android:src="@drawable/ic_regresar" />
 
         <LinearLayout
@@ -61,6 +62,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bordertop"
                 android:ems="10"
+                android:textColor="@color/white"
                 android:layout_marginTop="40dp"
                 android:hint="Usuario"
                 android:inputType="textPersonName"

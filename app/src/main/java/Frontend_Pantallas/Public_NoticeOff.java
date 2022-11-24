@@ -3,7 +3,10 @@ package Frontend_Pantallas;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.Spannable;
+import android.text.SpannableStringBuilder;
 import android.text.TextUtils;
+import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,6 +31,8 @@ public class Public_NoticeOff extends AppCompatActivity {
     EditText titulo;
     EditText contenido;
     Button publicar;
+    private EditText txttitulo1;
+
 
 
     private static final int SELECT_IMAGE = 100;
@@ -37,6 +42,7 @@ public class Public_NoticeOff extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_public_notice_off);
+
         mDatabase = FirebaseDatabase.getInstance().getReference("subirBD");
         btn = findViewById(R.id.pickImage);
         imageView = findViewById(R.id.image);
@@ -45,6 +51,9 @@ public class Public_NoticeOff extends AppCompatActivity {
         contenido = findViewById(R.id.txtcontenido);
         publicar = findViewById(R.id.button_public);
         regresar = findViewById(R.id.boton_regresar2);
+
+        //Funcion Cambiar colores
+        txttitulo1 = findViewById(R.id.txttitulo);
 
         publicar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -109,6 +118,13 @@ public class Public_NoticeOff extends AppCompatActivity {
         }else{
             Toast.makeText(this,"Rellene todos los campos",Toast.LENGTH_LONG).show();
         }
+
+    }
+
+    public void buttonSetColor(View view) {
+
+        Spannable spannableString = new SpannableStringBuilder(txttitulo1.getText());
+
 
     }
 
