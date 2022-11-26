@@ -13,10 +13,10 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_logo_launcher"
+        android:icon="@mipmap/ic_logoapp"
         android:label="@string/app_name"
         android:usesCleartextTraffic="true"
-        android:roundIcon="@mipmap/ic_logo_launcher_round"
+        android:roundIcon="@mipmap/ic_logoapp"
         android:supportsRtl="true"
         android:theme="@style/Theme.PizInt"
         tools:targetApi="31">
