@@ -30,10 +30,10 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Seccion De Noticias</string>
-    <string name="menu_gallery">Seccion VideoNoticias</string>
-    <string name="menu_slideshow">Seccion Itesco</string>
-    <string name="menu_music">Seccion Musica</string>
+    <string name="menu_home">Sección De Noticias</string>
+    <string name="menu_gallery">Sección VideoNoticias</string>
+    <string name="menu_slideshow">Sección Itesco</string>
+    <string name="menu_music">Sección Musica</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
