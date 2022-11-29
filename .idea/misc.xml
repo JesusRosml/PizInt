@@ -29,6 +29,7 @@
         <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/layout/nav_header_barra_navegacion_desplegable.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/menu/activity_main_drawer.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Jesus Rosml/AndroidStudioProjects/PizInt/app/src/main/res/menu/barra_navegacion_desplegable.xml" value="0.22447916666666667" />
+        <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/drawable/cont_bd.xml" value="0.244" />
         <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/drawable/ic_informacionitesco.xml" value="0.178" />
         <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/layout/activity_barra_navegacion_desplegable.xml" value="0.27447916666666666" />
         <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/layout/activity_exclusive_login.xml" value="0.264" />
@@ -39,16 +40,17 @@
         <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/layout/app_bar_barra_navegacion_desplegable.xml" value="0.27447916666666666" />
         <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/layout/content_barra_navegacion_desplegable.xml" value="0.27447916666666666" />
         <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/layout/fragment_gallery.xml" value="0.27447916666666666" />
-        <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/layout/fragment_home.xml" value="0.27447916666666666" />
+        <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/layout/fragment_home.xml" value="0.20054446460980035" />
         <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/layout/fragment_music.xml" value="0.27447916666666666" />
         <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/layout/fragment_off__sesion_autorizada.xml" value="0.27447916666666666" />
         <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/layout/fragment_pruebacontenedores.xml" value="0.27447916666666666" />
         <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/layout/fragment_slideshow.xml" value="0.27447916666666666" />
         <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/layout/nav_header_barra_navegacion_desplegable.xml" value="0.27447916666666666" />
-        <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/layout/recycler_bd_view.xml" value="0.27447916666666666" />
+        <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/layout/recycler_bd_view.xml" value="0.2" />
         <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/layout/titutlo_view.xml" value="0.27447916666666666" />
         <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/menu/activity_main_drawer.xml" value="0.27447916666666666" />
         <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/menu/barra_navegacion_desplegable.xml" value="0.27447916666666666" />
+        <entry key="..\:/android_Studio_Projects/PizInt/app/src/main/res/menu/top_app_bar.xml" value="0.27447916666666666" />
       </map>
     </option>
   </component>

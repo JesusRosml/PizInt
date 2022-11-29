@@ -17,11 +17,16 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 import com.jesus.pizint.BarraNavegacionDesplegable;
 import com.jesus.pizint.R;
+import com.squareup.picasso.Picasso;
 
 public class Public_NoticeOff extends AppCompatActivity {
 
@@ -31,7 +36,8 @@ public class Public_NoticeOff extends AppCompatActivity {
     EditText titulo;
     EditText contenido;
     Button publicar;
-    private EditText txttitulo1;
+    Uri uri;
+    String imagefinal;
 
 
 
@@ -43,7 +49,10 @@ public class Public_NoticeOff extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_public_notice_off);
 
+        //BASE DE DATOS EN TIEMPO REAL
         mDatabase = FirebaseDatabase.getInstance().getReference("subirBD");
+
+        //Boton y Variable de las imagenes
         btn = findViewById(R.id.pickImage);
         imageView = findViewById(R.id.image);
 
@@ -53,7 +62,6 @@ public class Public_NoticeOff extends AppCompatActivity {
         regresar = findViewById(R.id.boton_regresar2);
 
         //Funcion Cambiar colores
-        txttitulo1 = findViewById(R.id.txttitulo);
 
         publicar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,21 +99,41 @@ public class Public_NoticeOff extends AppCompatActivity {
 
         if(requestCode == SELECT_IMAGE && null != data)
         {
-            Uri uri = data.getData();
+            uri = data.getData();
             imageView.setImageURI(uri);
+            subirAlStorage(uri);
+
         }
+    }
+
+    private void subirAlStorage(Uri uri) {
+        StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("MyImages");
+        final StorageReference imageName = storageReference.child("imagenes").child(uri.getLastPathSegment());
+        imageName.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                imageName.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                    @Override
+                    public void onSuccess(Uri uri) {
+                        imagefinal = uri.toString();
+
+                    }
+                });
+            }
+        });
     }
 
     public void registrar(){
         //Obteniendo contenido ingresado en los campos guardadolos en las variables en formato string
         String obtcont = contenido.getText().toString();
         String obttitu = titulo.getText().toString();
+        String obtimg = imagefinal;
         //Condicion en donde no debe estar vacia las variables
-        if (!TextUtils.isEmpty(obtcont) && !TextUtils.isEmpty(obttitu)){
+        if (!TextUtils.isEmpty(obtcont) && !TextUtils.isEmpty(obttitu) && !TextUtils.isEmpty(obtimg)){
             //Obtiene la id con la que se hara el push al FireBase
             String id = mDatabase.push().getKey();
             //Variable que contiene los datos de la publicacion
-            subirBD publicacion = new subirBD(id, obttitu,obtcont,null);
+            subirBD publicacion = new subirBD(id, obttitu,obtcont,obtimg);
             //La bd crea una "tabla" llamada publicacion y otra "tabla" bajo el nombre de la id
             //de la publicacion subida
             mDatabase.child("Publicacion").child(id).setValue(publicacion);
@@ -114,17 +142,10 @@ public class Public_NoticeOff extends AppCompatActivity {
             //Salida despues de publicar el contenido
             Intent salir = new Intent(getBaseContext(), BarraNavegacionDesplegable.class);
             startActivity(salir);
-            //Si por alguna razon esta vacia obligara a mostrar un toast diciendo que rellene TODOS los campos
         }else{
+            //Si por alguna razon esta vacia obligara a mostrar un toast diciendo que rellene TODOS los campos
             Toast.makeText(this,"Rellene todos los campos",Toast.LENGTH_LONG).show();
         }
-
-    }
-
-    public void buttonSetColor(View view) {
-
-        Spannable spannableString = new SpannableStringBuilder(txttitulo1.getText());
-
 
     }
 

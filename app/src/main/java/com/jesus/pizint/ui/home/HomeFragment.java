@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -15,6 +14,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -75,7 +75,8 @@ public class HomeFragment extends Fragment {
                     for (DataSnapshot ds: snapshot.getChildren()){
                         String titulo = ds.child("titulo").getValue().toString();
                         String contenido = ds.child("contenido").getValue().toString();
-                        pPublicacionesList.add(new subirBD(null,titulo,contenido,null));
+                        String imagen = ds.child("imagen").getValue().toString();
+                        pPublicacionesList.add(new subirBD(null,titulo,contenido,imagen));
                     }
                     Collections.reverse(pPublicacionesList);
                     pAdapter = new publicacionAdapter(pPublicacionesList,R.layout.recycler_bd_view);
