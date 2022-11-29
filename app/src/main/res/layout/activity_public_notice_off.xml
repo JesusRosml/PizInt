@@ -16,15 +16,15 @@
         android:orientation="vertical">
 
         <LinearLayout
+            android:gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:orientation="horizontal"
             android:background="@drawable/border_encabezado">
 
             <ImageButton
                 android:id="@+id/boton_regresar2"
                 android:layout_width="80dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="7dp"
                 android:background="#AD1457"
                 android:layout_height="40dp"
@@ -37,16 +37,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Crear Publicación"
-                android:layout_marginTop="5dp"
                 android:textAlignment="center"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/button_public"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="5dp"
                 android:background="#AD1457"
                 android:textSize="15dp"
                 android:layout_marginLeft="12dp"
