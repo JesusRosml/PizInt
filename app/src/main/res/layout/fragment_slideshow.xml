@@ -61,145 +61,74 @@
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:gravity="center"
-        android:layout_marginTop="200dp"
-        android:background="@color/white">
+        android:layout_height="40dp"
+        android:layout_marginTop="205dp"
+        android:background="@color/white"></LinearLayout>
 
-    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="210dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        app:cardElevation="5dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cont_titleoffice"
+                android:orientation="vertical"
+                android:gravity="center">
 
-    <!-- Agenda de fechas -->
+                <TextView
+                    android:id="@+id/textViewTitulo10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-light"
+                    android:text="MENSAJE DEL DIRECTOR"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#AD1457"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="402dp"
+                        android:layout_height="220dp"
+                        android:src="@drawable/giffour4"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <org.naishadhparmar.zcustomcalendar.CustomCalendar
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="455dp"
         android:id="@+id/custom_calendar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
-    <!-- Codigo Informacion School -->
 
-    <LinearLayout
-        android:visibility="invisible"
-        android:orientation="vertical"
-        android:layout_marginTop="575dp"
-        android:layout_width="match_parent"
-        android:layout_height="400dp">
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@color/TituloNiticia1">
 
-            <LinearLayout
-                android:layout_gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:background="@color/InfScue">
-
-                <TextView
-                    android:id="@+id/titulo1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="3dp"
-                    android:text="Instituto Tecnológico Superior de Coatzacoalcos"
-                    android:textStyle="bold"
-                    android:textSize="15sp"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"/>
-
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/titulo2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="El Instituto Tecnológico Superior de Coatzacoalcos (También Tecnológico Nacional de México; Campus Coatzacoalcos, Tecnológico de Coatzacoalcos o simplemente más conocido como ITESCO) es una institución de nivel superior fundada en 1999 con sede en el estado de Veracruz que imparte ingenierías y licenciaturas en su programa educativo. Cabe destacar que es el tecnológico descentralizado a nivel nacional que cuenta con el mayor número de matrícula de estudiantes en México. Es una institución conocida por logros académicos conseguidos a nivel internacional. Su dirección general proviene del Tecnológico Nacional de México."
-                android:textStyle="bold"
-                android:textSize="13sp"
-                android:textAlignment="center"
-                android:textColor="@color/black"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/InfScue"
-                android:layout_gravity="center">
-
-                <TextView
-                    android:id="@+id/titulo3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Contáctanos"
-                    android:textStyle="bold"
-                    android:textSize="15sp"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"/>
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/titulo7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Tipo de Universidad: Pública"
-                android:textStyle="bold"
-                android:textSize="15sp"
-                android:textAlignment="center"
-                android:textColor="@color/black"/>
-
-            <TextView
-                android:id="@+id/titulo5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Teléfono: (921) 21 1 81 50"
-                android:textStyle="bold"
-                android:textSize="15sp"
-                android:textAlignment="center"
-                android:textColor="@color/black"/>
-
-            <TextView
-                android:id="@+id/titulo6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Ciudad: Coatzacoalcos, Veracruz."
-                android:textStyle="bold"
-                android:textSize="15sp"
-                android:textAlignment="center"
-                android:textColor="@color/black"/>
-
-            <TextView
-                android:id="@+id/titulo4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Dirección: Carretera Antigua Minatitlán-Coatzacoalcos Km 16.5 Col. Las Gaviotas. C.P. 96536. Coatzacoalcos, Ver."
-                android:textStyle="bold"
-                android:textSize="15sp"
-                android:textAlignment="center"
-                android:textColor="@color/black"/>
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <!-- Botones Flotantes -->
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:visibility="invisible"
-        android:layout_height="wrap_content"
-        android:id="@+id/fab1"
-        android:clickable="true"
-        android:focusable="true"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
-        android:backgroundTint="@color/BarraNav"
-        android:src="@drawable/iconcerrarsesion"/>
+    <!-- Agenda de fechas -->
 
     <TextView
         android:id="@+id/text_slideshow"

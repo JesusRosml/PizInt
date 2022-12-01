@@ -29,7 +29,7 @@
 
         <Button
             android:id="@+id/publicnotice1"
-            android:layout_width="280dp"
+            android:layout_width="285dp"
             android:layout_height="45dp"
             android:background="@drawable/style_bottom"
             android:text="Crear publicaciones"
@@ -40,15 +40,14 @@
 
     </LinearLayout>
 
-
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
-        android:layout_margin="4dp"
         android:layout_marginTop="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
         app:cardElevation="5dp">
 
         <LinearLayout
@@ -70,10 +69,30 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:fontFamily="sans-serif-light"
-                    android:text="MENSAJE DEL DIRECTOR"
+                    android:text="FELICES FIESTAS"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#AD1457"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textViewContenido"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:text="A todo los alumnos, administradores, directivos  feliz navidad, y feliz año nuevo hermosos deseos para todos"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -84,8 +103,8 @@
 
                     <pl.droidsonroids.gif.GifImageView
                         android:layout_width="402dp"
-                        android:layout_height="220dp"
-                        android:src="@drawable/giffour4"/>
+                        android:layout_height="322dp"
+                        android:src="@drawable/gifull"/>
 
                 </LinearLayout>
             </LinearLayout>
